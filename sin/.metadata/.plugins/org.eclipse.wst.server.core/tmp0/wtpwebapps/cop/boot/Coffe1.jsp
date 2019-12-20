@@ -652,5 +652,8 @@ align:center;
 					<div></div>
 				</div>
 			</div>
+			</div>
+			</footer>
+			
 </body>
 </html>

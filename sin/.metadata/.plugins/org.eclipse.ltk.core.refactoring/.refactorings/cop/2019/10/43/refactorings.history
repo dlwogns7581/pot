@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;cop/WebContent/boot/Coffe1_1.jsp&apos; to &apos;Coffe2.jsp&apos;" description="Rename resource &apos;Coffe1_1.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/boot/Coffe1_1.jsp" name="Coffe2.jsp" stamp="1571891992225" updateReferences="true"/>
+</session>

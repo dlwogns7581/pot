@@ -1,0 +1,121 @@
+
+10월 16, 2019 16:47:16.70 NEW SESSION
+10월 16, 2019 16:47:16.70 [7928:9200:1016/164716.703:ERROR:socket_stream.cc(219)] Closing stream with result -2
+
+10월 17, 2019 11:13:48.22 NEW SESSION
+10월 17, 2019 11:13:48.22 [3944:7344:1017/111348.214:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 17, 2019 11:14:12.94 [3944:7344:1017/111412.946:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 17, 2019 11:14:19.39 [3944:9428:1017/111419.392:ERROR:account_info_fetcher.cc(60)] OnGetTokenFailure: Connection failed (-106).
+10월 17, 2019 11:14:20.08 [3944:9428:1017/111420.085:ERROR:account_tracker.cc(241)] AccessTokenFetched error: Connection failed (-106).
+10월 17, 2019 11:15:03.06 [3944:7344:1017/111503.063:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 17, 2019 11:16:46.95 [3944:7344:1017/111646.953:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 17, 2019 11:19:32.27 [3944:7344:1017/111932.278:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 17, 2019 11:19:41.52 [3944:9428:1017/111941.529:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+10월 17, 2019 11:20:04.77 [3944:9428:1017/112004.777:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+10월 17, 2019 11:20:56.85 [3944:9428:1017/112056.853:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+10월 17, 2019 11:22:36.59 [3944:9428:1017/112236.590:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+10월 17, 2019 11:26:33.34 [3944:9428:1017/112633.341:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+10월 17, 2019 11:27:11.32 [3944:7344:1017/112711.324:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+
+10월 17, 2019 14:03:16.35 NEW SESSION
+10월 17, 2019 14:03:16.38 [2140:10012:1017/140314.696:ERROR:socket_stream.cc(219)] Closing stream with result -2
+10월 17, 2019 14:16:34.65 [2140:10216:1017/141634.656:ERROR:CONSOLE(307)] "Uncaught Error: The number of tiles (18) exceeds the maximum (10).", source: chrome-search://most-visited/single.js (307)
+10월 17, 2019 14:16:34.66 [2140:10216:1017/141634.656:ERROR:CONSOLE(307)] "Uncaught Error: The number of tiles (18) exceeds the maximum (10).", source: chrome-search://most-visited/single.js (307)
+
+10월 18, 2019 17:45:36.13 NEW SESSION
+10월 18, 2019 17:45:36.13 [10728:10132:1018/174536.110:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -21
+10월 18, 2019 17:45:40.74 [10728:10132:1018/174540.746:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+
+10월 22, 2019 20:08:06.39 NEW SESSION
+10월 22, 2019 20:08:06.39 [12996:8600:1022/200806.386:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 22, 2019 20:08:27.59 [12996:8600:1022/200827.595:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 22, 2019 20:08:32.86 [12996:7708:1022/200832.862:ERROR:account_tracker.cc(241)] AccessTokenFetched error: Connection failed (-106).
+10월 22, 2019 20:09:12.06 [12996:8600:1022/200912.068:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 22, 2019 20:11:10.69 [12996:8600:1022/201110.694:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 22, 2019 20:14:14.59 [12996:8600:1022/201414.589:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 22, 2019 20:17:46.37 [12996:7708:1022/201746.370:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+10월 22, 2019 20:18:15.59 [12996:7708:1022/201815.594:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+10월 22, 2019 20:19:02.83 [12996:7708:1022/201902.837:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+10월 22, 2019 20:20:30.64 [12996:7708:1022/202030.645:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+10월 22, 2019 20:22:04.77 [12996:8600:1022/202204.774:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+10월 22, 2019 20:23:48.99 [12996:7708:1022/202348.997:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+10월 22, 2019 20:27:14.45 [12996:8600:1022/202714.450:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+
+10월 28, 2019 10:35:18.21 NEW SESSION
+10월 28, 2019 10:35:18.21 [3060:11172:1028/103518.163:ERROR:socket_stream.cc(218)] Closing stream with result -2
+10월 28, 2019 10:37:03.65 [3060:11172:1028/103703.659:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -7
+10월 28, 2019 10:37:05.92 [3060:11172:1028/103705.922:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -106
+
+10월 28, 2019 22:46:10.36 NEW SESSION
+10월 28, 2019 22:46:10.41 [5844:8016:1028/224609.732:ERROR:socket_stream.cc(218)] Closing stream with result -2
+
+10월 29, 2019 17:34:56.06 NEW SESSION
+10월 29, 2019 17:34:56.06 [8124:10512:1029/173456.066:ERROR:cache_util_win.cc(21)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+10월 29, 2019 17:34:56.08 [8524:7012:1029/173456.065:ERROR:cache_util_win.cc(21)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+10월 29, 2019 17:34:56.10 [8124:10512:1029/173456.066:ERROR:cache_util.cc(141)] Unable to move cache folder C:\Users\Jaehun\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\Jaehun\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+10월 29, 2019 17:34:56.11 [8524:7012:1029/173456.065:ERROR:cache_util.cc(141)] Unable to move cache folder C:\Users\Jaehun\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\Jaehun\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+10월 29, 2019 17:34:56.13 [8124:10512:1029/173456.066:ERROR:disk_cache.cc(178)] Unable to create cache
+10월 29, 2019 17:34:56.14 [8524:7012:1029/173456.065:ERROR:disk_cache.cc(178)] Unable to create cache
+10월 29, 2019 17:34:56.16 [8124:10512:1029/173456.066:ERROR:shader_disk_cache.cc(601)] Shader Cache Creation failed: -2
+10월 29, 2019 17:34:56.18 [8524:7012:1029/173456.065:ERROR:shader_disk_cache.cc(601)] Shader Cache Creation failed: -2
+10월 29, 2019 17:34:56.58 기존 브라우저 세션에서 여는 중입니다.
+10월 29, 2019 17:34:56.64 기존 브라우저 세션에서 여는 중입니다.
+
+10월 30, 2019 17:12:24.17 NEW SESSION
+10월 30, 2019 17:12:24.19 [11256:8816:1030/171223.898:ERROR:socket_stream.cc(218)] Closing stream with result -2
+10월 30, 2019 17:18:02.60 [11256:8816:1030/171802.604:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -106
+10월 30, 2019 17:47:24.50 [11256:8816:1030/174724.435:ERROR:socket_stream.cc(218)] Closing stream with result -2
+10월 30, 2019 17:56:52.97 [11256:8816:1030/175652.977:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -106
+
+10월 31, 2019 15:15:39.60 NEW SESSION
+10월 31, 2019 15:15:39.61 [17372:2940:1031/151539.507:ERROR:socket_stream.cc(218)] Closing stream with result -2
+10월 31, 2019 15:16:27.28 [17372:2940:1031/151627.286:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -7
+10월 31, 2019 15:16:29.31 [17372:2940:1031/151629.310:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -106
+
+11월 02, 2019 20:12:35.38 NEW SESSION
+11월 02, 2019 20:12:35.38 [14524:7280:1102/201235.066:ERROR:socket_stream.cc(218)] Closing stream with result -2
+11월 02, 2019 20:34:10.06 [14524:7280:1102/203410.064:ERROR:socket_stream.cc(218)] Closing stream with result -2
+11월 02, 2019 23:34:11.30 [14524:7280:1102/233411.308:ERROR:socket_stream.cc(218)] Closing stream with result -2
+11월 02, 2019 23:34:11.47 [14524:8992:1102/233411.471:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+11월 04, 2019 09:03:10.75 [14524:8992:1104/090310.751:ERROR:gcm_channel_status_request.cc(145)] GCM channel request failed.
+11월 04, 2019 09:03:11.47 [14524:7280:1104/090311.469:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -106
+
+11월 04, 2019 11:30:55.37 NEW SESSION
+11월 04, 2019 11:30:55.37 [7800:6760:1104/113055.360:ERROR:socket_stream.cc(218)] Closing stream with result -2
+11월 04, 2019 12:25:58.14 [7800:6760:1104/122558.143:ERROR:socket_stream.cc(218)] Closing stream with result -2
+11월 04, 2019 13:05:28.28 [7800:9724:1104/130528.285:ERROR:get_updates_processor.cc(246)] PostClientToServerMessage() failed during GetUpdates
+11월 04, 2019 13:05:28.55 [7800:9724:1104/130528.497:ERROR:get_updates_processor.cc(246)] PostClientToServerMessage() failed during GetUpdates
+11월 04, 2019 13:05:29.91 [7800:6760:1104/130529.917:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -106
+
+11월 05, 2019 23:58:01.07 NEW SESSION
+11월 05, 2019 23:58:01.07 [14188:11168:1105/235801.071:ERROR:socket_stream.cc(218)] Closing stream with result -2
+11월 06, 2019 24:01:01.62 [14188:11168:1106/000101.624:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -7
+11월 06, 2019 24:01:01.91 [14188:11168:1106/000101.917:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -106
+11월 06, 2019 24:01:07.68 [14188:11168:1106/000107.689:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -21
+
+11월 06, 2019 09:37:49.02 NEW SESSION
+11월 06, 2019 09:37:49.02 [8028:13844:1106/093749.022:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -106
+11월 06, 2019 09:47:18.36 [8028:13844:1106/094718.345:ERROR:socket_stream.cc(218)] Closing stream with result -2
+11월 06, 2019 09:47:24.19 [8028:13844:1106/094724.199:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -21
+11월 06, 2019 09:56:23.93 [8028:13844:1106/095623.932:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -101
+11월 06, 2019 09:58:24.60 [8028:13844:1106/095824.602:ERROR:socket_stream.cc(218)] Closing stream with result -2
+11월 06, 2019 09:58:59.31 [8028:13844:1106/095859.319:ERROR:socket_stream.cc(218)] Closing stream with result -2
+11월 06, 2019 09:59:02.67 [8028:13844:1106/095902.677:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -21
+
+11월 06, 2019 11:27:03.34 NEW SESSION
+11월 06, 2019 11:27:03.34 [14928:14396:1106/112703.343:ERROR:socket_stream.cc(218)] Closing stream with result -2
+11월 06, 2019 11:27:41.64 [14928:14396:1106/112741.640:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -7
+11월 06, 2019 11:27:43.93 [14928:14396:1106/112743.933:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -106
+11월 06, 2019 11:33:08.71 [14928:14396:1106/113308.713:ERROR:socket_stream.cc(218)] Closing stream with result -2
+11월 06, 2019 11:34:37.54 [14928:14396:1106/113437.546:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -7
+11월 06, 2019 11:35:07.84 [14928:14396:1106/113507.847:ERROR:socket_stream.cc(218)] Closing stream with result -2
+
+11월 07, 2019 13:39:15.83 NEW SESSION
+11월 07, 2019 13:39:15.85 [10640:10408:1107/133915.687:ERROR:socket_stream.cc(218)] Closing stream with result -2
+
+11월 07, 2019 17:12:59.94 NEW SESSION
+11월 07, 2019 17:12:59.94 [8336:8516:1107/171259.934:ERROR:socket_stream.cc(218)] Closing stream with result -2
+11월 07, 2019 17:13:06.91 [8336:8516:1107/171306.911:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -106
+11월 07, 2019 17:15:24.86 [8336:8516:1107/171524.860:ERROR:socket_stream.cc(218)] Closing stream with result -2
+11월 07, 2019 17:17:57.50 [8336:8516:1107/171757.501:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -7
+11월 07, 2019 17:17:58.27 [8336:8516:1107/171758.273:ERROR:connection_factory_impl.cc(417)] Failed to connect to MCS endpoint with error -106

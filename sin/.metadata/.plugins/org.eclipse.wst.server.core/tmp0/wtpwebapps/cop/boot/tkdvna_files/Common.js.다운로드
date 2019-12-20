@@ -1,0 +1,540 @@
+﻿// 레이어 팝업 
+$(window).load(function () {
+    var layerPop = $("#layerPopup"),
+		layerBody = layerPop.find('[class^=inner]');
+    var posTop, posLeft;
+
+    var setPosition = function () {
+        if ($(window).height() < layerBody.outerHeight()) {
+            layerBody.css({
+                'height': $(window).height() - 50,
+                'overflow-y': 'auto',
+                'overflow-x': 'hidden'
+            })
+        } else {
+            layerBody.css({
+                'height': 'auto',
+                'overflow': 'auto'
+            })
+        }
+        posTop = parseInt(layerBody.outerHeight() / -2, 10);
+        posLeft = parseInt(layerBody.outerWidth() / -2, 10);
+
+        layerBody.css({
+            'marginTop': posTop,
+            'marginLeft': posLeft
+        })
+    };
+
+    $(window).resize(function () {
+        if (layerPop.is(':visible')) {
+            setPosition();
+        }
+    })
+
+    setPosition();
+});
+
+
+
+
+
+
+
+(function (jQuery) {
+    jQuery.fn.removeText = function (val) {
+        if (typeof (val) === "undefined") {
+            jQuery(this).each(function () {
+                this.value = this.value.replace(/[^0-9]/g, '');
+            });
+        }
+        else {
+            return val.replace(/[^0-9]/g, '');
+        }
+    };
+
+    jQuery.fn.numberFormat = function (val) {
+        this.proc = function (val) {
+            var tmp = '',
+                number = '',
+                cutlen = 3,
+                comma = ','
+            i = 0,
+            len = _v.length,
+            mod = (len % cutlen),
+            k = cutlen - mod;
+
+            for (i; i < len; i++) {
+                number = number + _v.charAt(i);
+                if (i < len - 1) {
+                    k++;
+                    if ((k % cutlen) == 0) {
+                        number = number + comma;
+                        k = 0;
+                    }
+                }
+            }
+            return number;
+        };
+
+        var proc = this.proc;
+        if (typeof (val) === "undefined") {
+            jQuery(this).each(function () {
+                this.value = proc(jQuery(this).removeText(this.value));
+            });
+        }
+        else {
+            return proc(val);
+        }
+    };
+
+    jQuery.fn.onlyNumber = function (p, isFormat) {
+        jQuery(this).each(function (i) {
+            jQuery(this).attr({ 'style': 'text-align:right' });
+
+            this.value = jQuery(this).removeText(this.value);
+            this.value = jQuery(this).numberFormat(this.value);
+
+            jQuery(this).bind('keypress keyup', function (e) {
+                this.value = jQuery(this).removeText(this.value);
+
+                if (isFormat == "true")
+                    this.value = jQuery(this).numberFormat(this.value);
+            });
+        });
+    };
+})(jQuery);
+
+// 입력값이 한글 영어 숫자 인지 체크 다른값이 있으면 false
+function chkac(instr) {
+    for (kk = 0; kk < instr.length; kk++) {
+        mmstr = instr.substr(kk, 1).charCodeAt(0);
+        if (mmstr > 32 && mmstr < 48 || mmstr > 57 && mmstr < 65 || mmstr > 90 && mmstr < 97 || mmstr > 122 && mmstr < 44032 || mmstr > 63086) {
+            return "false";
+            break;
+        }
+    }
+}
+
+function ToDateTime(str) {
+    if ((str = str.match(/^(\d{4})(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])$/))) {
+        str[0] = new Date(+str[1], +str[2] - 1, +str[3]);
+        if (str[0].getMonth() === +str[2] - 1)
+            return str[0];
+    }
+    return undefined;
+}
+
+// 입력값을 모든걸 빼고 숫자만 리턴
+function changenum(instring) {
+    var pnumresult = "";
+    for (ic = 0; ic < instring.length; ic++) {
+        charpnum = instring.substr(ic, 1);
+        if (charpnum.charCodeAt(0) > 47 && charpnum.charCodeAt(0) < 58) {
+            pnumresult = pnumresult + charpnum;
+        }
+    }
+    return pnumresult;
+}
+
+function chkTel(telnumber) {
+    localNum = new Array("02", "031", "032", "033", "041", "042", "043", "051", "052", "053", "054", "055", "061", "062", "063", "064", "012", "015", "010", "011", "016", "017", "018", "019", "0502")
+    tel1 = "";
+    for (ia = 0; ia < localNum.length; ia++)  // 앞에 세 자리 가운데 지역번호 유효성 검사
+    {
+        if (telnumber.substr(0, 3) == localNum[ia]) {
+            tel1 = telnumber.substr(0, 3);
+            tel2 = telnumber.substr(3, telnumber.length);
+            break;
+        }
+    }
+    if (tel1 == "")
+        for (ia = 0; ia < localNum.length; ia++)   // 앞에 두 자리 가운데 지역번호 유효성 검사
+        {
+            if (telnumber.substr(0, 2) == localNum[ia]) {
+                tel1 = telnumber.substr(0, 2);
+                tel2 = telnumber.substr(2, telnumber.length);
+                break;
+            }
+        }
+    if (tel1 == "")
+        for (ia = 0; ia < localNum.length; ia++)    // 앞에 네 자리 가운데 지역번호 유효성 검사
+        {
+            if (telnumber.substr(0, 4) == localNum[ia]) {
+                tel1 = telnumber.substr(0, 4);
+                tel2 = telnumber.substr(4, telnumber.length);
+                break;
+            }
+        }
+    if (tel1 == "" || tel2.length > 8)  // 앞에 2,3,4 자리 가운데 지역번호가 없으면 잘못된 번호
+    {
+        return "false";
+    }
+    tel3 = tel2.substr(tel2.length - 4, 4)
+    tel2 = tel2.substr(0, tel2.length - 4)
+    resultTel = tel1 + "-" + tel2 + "-" + tel3;
+    return resultTel;
+}
+
+String.prototype.Contains = function (it) { return this.indexOf(it) != -1; }
+
+function ParentRefresh() {
+    if (parent && parent.resizeHeight)
+        parent.resizeHeight(document.body);
+}
+
+function ParentSetTitle() {
+    if (parent)
+        parent.document.title = document.title;
+}
+
+
+$(function () {
+    ParentRefresh();
+
+    ParentSetTitle();
+});
+
+
+
+// 새창으로 열기
+Popup = function (url, name, args, width, height, resize, isScroll) {
+    this.Url = url;
+    this.Name = name;
+    this.Args = args;
+    this.Width = width;
+    this.Height = height;
+    this.Help = "no";
+    this.Menubar = "no";
+    this.Toolbar = "no";
+    this.Directories = "no";
+    this.Scrollbars = isScroll;
+    this.Status = "no";
+    this.Location = "no";
+    this.Resizable = "no";
+}
+
+var TnetPopup = {
+    Open: function (url, target, Width, Height, sFeatures) {
+        var iLeft = (window.screen.width / 2) - (Width / 2);
+        var iTop = (window.screen.height / 2) - (Height / 2);
+        var sFeatures = "Width=" + Width + ",Height=" + Height + ",left=" + iLeft + ",top=" + iTop + "," + sFeatures;
+
+        var win = window.open(url, target, sFeatures);
+        win.focus();
+    }
+}
+
+Popup.prototype.getUrl = function () { return this.Url; }; Popup.prototype.setUrl = function (val) { this.Url = val; };
+Popup.prototype.getName = function () { return this.Name; }; Popup.prototype.setName = function (val) { this.Name = val; };
+Popup.prototype.getArgs = function () { return this.Args; }; Popup.prototype.setArgs = function (val) { this.Args = val; };
+Popup.prototype.getWidth = function () { return this.Width; }; Popup.prototype.setWidth = function (val) { this.Width = val; };
+Popup.prototype.getHeight = function () { return this.Height; }; Popup.prototype.setHeight = function (val) { this.Height = val; };
+Popup.prototype.getHelp = function () { return this.Help; }; Popup.prototype.setHelp = function (val) { this.Help = val; };
+Popup.prototype.getMenubar = function () { return this.Menubar; }; Popup.prototype.setMenubar = function (val) { this.Menubar = val; };
+Popup.prototype.getToolbar = function () { return this.Toolbar; }; Popup.prototype.setToolbar = function (val) { this.Toolbar = val; };
+Popup.prototype.getDirectories = function () { return this.Directories; }; Popup.prototype.setDirectories = function (val) { this.Directories = val; };
+Popup.prototype.getScrollbars = function () { return this.Scrollbars; }; Popup.prototype.setScrollbars = function (val) { this.Scrollbars = val; };
+Popup.prototype.getStatus = function () { return this.Status; }; Popup.prototype.setStatus = function (val) { this.Status = val; };
+Popup.prototype.getLocation = function () { return this.Location; }; Popup.prototype.setLocation = function (val) { this.Location = val; };
+Popup.prototype.getResizable = function () { return this.Resizable; }; Popup.prototype.setResizable = function (val) { this.Resizable = val; };
+
+Popup.prototype.Open = function () {
+    try {
+        var iLeft = (window.screen.width / 2) - (this.Width / 2);
+        var iTop = (window.screen.height / 2) - (this.Height / 2);
+
+        var sFeatures = "width=" + this.Width + "px";
+        sFeatures += ",height=" + this.Height + "px";
+        sFeatures += ",top=" + iTop + "px";
+        sFeatures += ",left=" + iLeft + "px";
+        sFeatures += ",help=" + this.Help;
+        sFeatures += ",menubar=" + this.Menubar;
+        sFeatures += ",toolbar=" + this.Toolbar;
+        sFeatures += ",directories=" + this.Directories;
+        sFeatures += ",scrollbars=" + this.Scrollbars;
+        sFeatures += ",status=" + this.Status;
+        sFeatures += ",location=" + this.Location;
+        sFeatures += ",resizable=" + this.Resizable;
+
+        var win = window.open(this.Url, this.Name, sFeatures);
+        win.focus();
+    } catch (e) {
+        alert("Popup.Open : " + e.message);
+    }
+}
+
+Popup.prototype.OpenEx = function (top, left) {
+    try {
+        var sFeatures = "width=" + this.Width + "px";
+        sFeatures += ",height=" + this.Height + "px";
+        sFeatures += ",top=" + top + "px";
+        sFeatures += ",left=" + left + "px";
+        sFeatures += ",help=" + this.Help;
+        sFeatures += ",menubar=" + this.Menubar;
+        sFeatures += ",toolbar=" + this.Toolbar;
+        sFeatures += ",directories=" + this.Directories;
+        sFeatures += ",scrollbars=" + this.Scrollbars;
+        sFeatures += ",status=" + this.Status;
+        sFeatures += ",location=" + this.Location;
+        sFeatures += ",resizable=" + this.Resizable;
+
+        var win = window.open(this.Url, this.Name, sFeatures);
+
+    } catch (e) {
+        alert("Popup.Open : " + e.message);
+    }
+}
+
+Popup.prototype.Modal = function () {
+    try {
+        var sReturn = "";
+        var iLeft = (window.screen.width / 2) - (this.Width / 2);
+        var iTop = (window.screen.height / 2) - (this.Height / 2);
+        var sFeatures = "dialogwidth=" + this.Width + "px";
+        sFeatures += ";dialogheight=" + this.Height + "px";
+        sFeatures += ";dialogtop=" + iTop + "px";
+        sFeatures += ";dialogleft=" + iLeft + "px";
+        sFeatures += ";help=" + this.Help;
+        sFeatures += ";scroll=" + this.Scrollbars;
+        sFeatures += ";status=" + this.Status;
+        sFeatures += ";resizable=" + this.Resizable;
+
+        sReturn = window.showModalDialog(this.Url, this.Args, sFeatures);
+        return sReturn;
+    } catch (e) {
+        alert("Popup.Modal : " + e.message);
+    }
+}
+
+
+function NumberOnly() {
+    if ((event.keyCode < 48) || (event.keyCode > 57)) {
+        event.returnValue = false;
+    }
+}
+
+String.isNullOrEmpty = function (str) {
+    if (str == null) return true;
+    if (str == undefined) return true;
+    if (str.trim() == "") return true;
+
+    return false;
+}
+
+function commify(n) {
+    var reg = /(^[+-]?\d+)(\d{3})/;   // 정규식
+    n += '';                          // 숫자를 문자열로 변환
+    while (reg.test(n)) {
+        n = n.replace(reg, '$1' + ',' + '$2');
+    }
+    return n;
+}
+
+// 문자의 좌, 우 공백 제거
+String.prototype.trim = function () {
+    return this.replace(/(^\s*)|(\s*$)/g, "");
+}
+
+// 문자의 좌 공백 제거
+String.prototype.ltrim = function () {
+    return this.replace(/(^\s*)/, "");
+}
+
+// 문자의 우 공백 제거
+String.prototype.rtrim = function () {
+    return this.replace(/(\s*$)/, "");
+}
+
+// 문장중에 문자나 문자열을 지정된 값으로 변환
+String.prototype.replaceAll = function (oldstr, newstr) {
+    re = eval("/" + oldstr + "/gi");
+    return this.replace(re, newstr);
+}
+
+// 문자열의 byte 길이 반환  
+String.prototype.byte = function () {
+    var cnt = 0;
+    for (var i = 0; i < this.length; i++) {
+        if (this.charCodeAt(i) > 127)
+            cnt += 2;
+        else
+            cnt++;
+    }
+    return cnt;
+}
+
+
+function jsDayCheck(strVal) {
+    var strValue = strVal.val();
+
+    alert(strValue);
+
+    var chk1 = /^(19|20)\d{2}-([1-9]|1[012])-([1-9]|[12][0-9]|3[01])$/;
+    //var chk2 = /^(19|20)\d{2}\/([0][1-9]|1[012])\/(0[1-9]|[12][0-9]|3[01])$/;
+    var chk2 = /^(19|20)\d{2}-([0][1-9]|1[012])-([012][1-9]|3[01])$/;
+
+    //-------------------------------------------------------------------------------  
+    // 유효성 검사- 입력형식에 맞게 들왔는지 // 예) 2000-1-1, 2000-01-01 2가지 형태 지원  
+    //-------------------------------------------------------------------------------  
+    if (chk1.test(strValue) == false && chk2.test(strValue) == false) { // 유효성 검사에 둘다 성공하지 못했다면  
+        alert("2015-1-1 형식 또는 \r\n2015-01-01 형식으로 날자를 입력해주세요.");
+        return false;
+    }
+
+    //-------------------------------------------------------------------------------  
+    // 존재하는 날자(유효한 날자) 인지 체크  
+    //-------------------------------------------------------------------------------  
+    var bDateCheck = true;
+    //var arrDate = Obj.value.split("-");
+    var arrDate = strValue.split("-");
+    var nYear = Number(arrDate[0]);
+    var nMonth = Number(arrDate[1]);
+    var nDay = Number(arrDate[2]);
+
+    if (nYear < 2013 || nYear > 2100) { // 사용가능 하지 않은 년도 체크  
+        bDateCheck = false;
+    }
+
+    if (nMonth < 1 || nMonth > 12) { // 사용가능 하지 않은 달 체크  
+        bDateCheck = false;
+    }
+
+    // 해당달의 마지막 일자 구하기  
+    var nMaxDay = new Date(new Date(nYear, nMonth, 1) - 86400000).getDate();
+    if (nDay < 1 || nDay > nMaxDay) { // 사용가능 하지 않은 날자 체크  
+        bDateCheck = false;
+    }
+
+    if (bDateCheck == false) {
+        alert("존재하지 않은 년월일을 입력하셨습니다. 다시한번 확인해주세요");
+        return false;
+    }
+}
+
+(function (window) {
+
+    $type = String;
+    $type.__typeName = 'String';
+    $type.__class = true;
+
+    $prototype = $type.prototype;
+    $prototype.endsWith = function String$endsWith(suffix) {
+        /// <summary>Determines whether the end of this instance matches the specified string.</summary>
+        /// <param name="suffix" type="String">A string to compare to.</param>
+        /// <returns type="Boolean">true if suffix matches the end of this instance; otherwise, false.</returns>
+        return (this.substr(this.length - suffix.length) === suffix);
+    }
+
+    $prototype.startsWith = function String$startsWith(prefix) {
+        /// <summary >Determines whether the beginning of this instance matches the specified string.</summary>
+        /// <param name="prefix" type="String">The String to compare.</param>
+        /// <returns type="Boolean">true if prefix matches the beginning of this string; otherwise, false.</returns>
+        return (this.substr(0, prefix.length) === prefix);
+    }
+
+    $prototype.trim = function String$trim() {
+        /// <summary >Removes all leading and trailing white-space characters from the current String object.</summary>
+        /// <returns type="String">The string that remains after all white-space characters are removed from the start and end of the current String object.</returns>
+        return this.replace(/^\s+|\s+$/g, '');
+    }
+
+    $prototype.trimEnd = function String$trimEnd() {
+        /// <summary >Removes all trailing white spaces from the current String object.</summary>
+        /// <returns type="String">The string that remains after all white-space characters are removed from the end of the current String object.</returns>
+        return this.replace(/\s+$/, '');
+    }
+
+    $prototype.trimStart = function String$trimStart() {
+        /// <summary >Removes all leading white spaces from the current String object.</summary>
+        /// <returns type="String">The string that remains after all white-space characters are removed from the start of the current String object.</returns>
+        return this.replace(/^\s+/, '');
+    }
+
+    $type.format = function String$format(format, args) {
+        /// <summary>Replaces the format items in a specified String with the text equivalents of the values of   corresponding object instances. The invariant culture will be used to format dates and numbers.</summary>
+        /// <param name="format" type="String">A format string.</param>
+        /// <param name="args" parameterArray="true" mayBeNull="true">The objects to format.</param>
+        /// <returns type="String">A copy of format in which the format items have been replaced by the   string equivalent of the corresponding instances of object arguments.</returns>
+        return String._toFormattedString(false, arguments);
+    }
+
+    $type._toFormattedString = function String$_toFormattedString(useLocale, args) {
+        var result = '';
+        var format = args[0];
+
+        for (var i = 0; ;) {
+            // Find the next opening or closing brace
+            var open = format.indexOf('{', i);
+            var close = format.indexOf('}', i);
+            if ((open < 0) && (close < 0)) {
+                // Not found: copy the end of the string and break
+                result += format.slice(i);
+                break;
+            }
+            if ((close > 0) && ((close < open) || (open < 0))) {
+
+                if (format.charAt(close + 1) !== '}') {
+                    throw new Error('format stringFormatBraceMismatch');
+                }
+
+                result += format.slice(i, close + 1);
+                i = close + 2;
+                continue;
+            }
+
+            // Copy the string before the brace
+            result += format.slice(i, open);
+            i = open + 1;
+
+            // Check for double braces (which display as one and are not arguments)
+            if (format.charAt(i) === '{') {
+                result += '{';
+                i++;
+                continue;
+            }
+
+            if (close < 0) throw new Error('format stringFormatBraceMismatch');
+
+
+            // Find the closing brace
+
+            // Get the string between the braces, and split it around the ':' (if any)
+            var brace = format.substring(i, close);
+            var colonIndex = brace.indexOf(':');
+            var argNumber = parseInt((colonIndex < 0) ? brace : brace.substring(0, colonIndex), 10) + 1;
+
+            if (isNaN(argNumber)) throw new Error('format stringFormatInvalid');
+
+            var argFormat = (colonIndex < 0) ? '' : brace.substring(colonIndex + 1);
+
+            var arg = args[argNumber];
+            if (typeof (arg) === "undefined" || arg === null) {
+                arg = '';
+            }
+
+            // If it has a toFormattedString method, call it.  Otherwise, call toString()
+            if (arg.toFormattedString) {
+                result += arg.toFormattedString(argFormat);
+            }
+            else if (useLocale && arg.localeFormat) {
+                result += arg.localeFormat(argFormat);
+            }
+            else if (arg.format) {
+                result += arg.format(argFormat);
+            }
+            else
+                result += arg.toString();
+
+            i = close + 1;
+        }
+
+        return result;
+    }
+
+})(window);
+
+
+function IsUseUserID() {
+
+}

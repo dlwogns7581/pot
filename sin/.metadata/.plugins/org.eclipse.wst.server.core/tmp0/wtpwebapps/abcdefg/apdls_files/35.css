@@ -1,0 +1,35 @@
+
+/** 헤더 검색 */
+.search_btn { width: 35px; background-size: 22px; background-position-y: center; }
+.search_input { width: calc(100% - 58px); }
+@media screen and (max-width: 768px) {
+  #search_m {
+    padding-top: 14px;
+  }
+  #search_m img {
+    width: 20px;
+  }
+  .store_nav #search_m {
+    top: 2px;
+    left: 10px;
+  }
+}
+
+/** 셀러 헤더 검색 */
+.store_search input[type="submit"] { width: 35px; background-size: 22px; background-position-y: center; }
+
+/** 상품 상세 > 옵션 */
+.detail_footer .ui-selectmenu-button { margin-bottom: 0; }
+.detail_footer .ui-selectmenu-button:not(:last-of-type) { margin-bottom: 15px; }
+.ui-menu .ui-menu-item-wrapper { padding: 15px 13px !important;  }
+
+/** 상품 상세 > 셀러정보 */
+.list_store_tag { padding-top: 1px; }
+
+/** 상품 상세 > 썸네일 페이징 */
+.lSSlideOuter > .lSPager.lSGallery { margin-top: 2px !important; }
+
+/** 상품 상세 > 선택한 상품 */
+.detail_selectie_options { line-height: 32px; }
+.detail_selectie_options .num_plus, .detail_selectie_options .num_minus { border: solid 1px #bdbdbd !important; }
+.detail_selectie_options .input_num { border-left: 0px; border-right: 0px; border-top: solid 1px #bdbdbd !important; border-bottom: solid 1px #bdbdbd !important; }

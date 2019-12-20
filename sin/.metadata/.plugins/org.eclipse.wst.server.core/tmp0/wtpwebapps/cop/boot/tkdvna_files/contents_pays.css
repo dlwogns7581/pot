@@ -1,0 +1,927 @@
+﻿/* font  190828 추가 */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Noto Sans KR Thin'), local('NotoSansKR-Thin'), url(../font/NotoSansKR/NotoSansKR-Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans KR Light'), local('NotoSansKR-Light'), url(../font/NotoSansKR/NotoSansKR-Light.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans KR Regular'), local('NotoSansKR-Regular'), url(../font/NotoSansKR/NotoSansKR-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans KR Medium'), local('NotoSansKR-Medium'), url(../font/NotoSansKR/NotoSansKR-Medium.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans KR Bold'), local('NotoSansKR-Bold'), url(../font/NotoSansKR/NotoSansKR-Bold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Noto Sans KR Black'), local('NotoSansKR-Black'), url(../font/NotoSansKR/NotoSansKR-Black.otf) format('opentype');
+}
+
+
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(../font/NotoSans/mem6YaGs126MiZpBA-UFUK0Udc1UAw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(../font/NotoSans/mem6YaGs126MiZpBA-UFUK0ddc1UAw.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(../font/NotoSans/mem6YaGs126MiZpBA-UFUK0Vdc1UAw.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(../font/NotoSans/mem6YaGs126MiZpBA-UFUK0adc1UAw.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(../font/NotoSans/mem6YaGs126MiZpBA-UFUK0Wdc1UAw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(../font/NotoSans/mem6YaGs126MiZpBA-UFUK0Xdc1UAw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(../font/NotoSans/mem6YaGs126MiZpBA-UFUK0Zdc0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(../font/NotoSans/memnYaGs126MiZpBA-UFUKWiUNhmIqOjjg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(../font/NotoSans/memnYaGs126MiZpBA-UFUKWiUNhvIqOjjg.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(../font/NotoSans/memnYaGs126MiZpBA-UFUKWiUNhnIqOjjg.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(../font/NotoSans/memnYaGs126MiZpBA-UFUKWiUNhoIqOjjg.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(../font/NotoSans/memnYaGs126MiZpBA-UFUKWiUNhkIqOjjg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(../font/NotoSans/memnYaGs126MiZpBA-UFUKWiUNhlIqOjjg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(../font/NotoSans/memnYaGs126MiZpBA-UFUKWiUNhrIqM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'), url(../font/NotoSans/memnYaGs126MiZpBA-UFUKW-U9hmIqOjjg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'), url(../font/NotoSans/memnYaGs126MiZpBA-UFUKW-U9hvIqOjjg.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'), url(../font/NotoSans/memnYaGs126MiZpBA-UFUKW-U9hnIqOjjg.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'), url(../font/NotoSans/memnYaGs126MiZpBA-UFUKW-U9hoIqOjjg.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'), url(../font/NotoSans/memnYaGs126MiZpBA-UFUKW-U9hkIqOjjg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'), url(../font/NotoSans/memnYaGs126MiZpBA-UFUKW-U9hlIqOjjg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'), url(../font/NotoSans/memnYaGs126MiZpBA-UFUKW-U9hrIqM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(../font/NotoSans/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(../font/NotoSans/mem8YaGs126MiZpBA-UFUZ0bbck.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(../font/NotoSans/mem8YaGs126MiZpBA-UFWZ0bbck.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(../font/NotoSans/mem8YaGs126MiZpBA-UFVp0bbck.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(../font/NotoSans/mem8YaGs126MiZpBA-UFWp0bbck.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(../font/NotoSans/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(../font/NotoSans/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../font/NotoSans/mem5YaGs126MiZpBA-UN7rgOX-hpOqc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../font/NotoSans/mem5YaGs126MiZpBA-UN7rgOVuhpOqc.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../font/NotoSans/mem5YaGs126MiZpBA-UN7rgOXuhpOqc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../font/NotoSans/mem5YaGs126MiZpBA-UN7rgOUehpOqc.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../font/NotoSans/mem5YaGs126MiZpBA-UN7rgOXehpOqc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../font/NotoSans/mem5YaGs126MiZpBA-UN7rgOXOhpOqc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../font/NotoSans/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(../font/NotoSans/mem5YaGs126MiZpBA-UN8rsOX-hpOqc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(../font/NotoSans/mem5YaGs126MiZpBA-UN8rsOVuhpOqc.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(../font/NotoSans/mem5YaGs126MiZpBA-UN8rsOXuhpOqc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(../font/NotoSans/mem5YaGs126MiZpBA-UN8rsOUehpOqc.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(../font/NotoSans/mem5YaGs126MiZpBA-UN8rsOXehpOqc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(../font/NotoSans/mem5YaGs126MiZpBA-UN8rsOXOhpOqc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(../font/NotoSans/mem5YaGs126MiZpBA-UN8rsOUuhp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* //font  190828 추가 */
+
+/*190828 수정*/
+.subTipVisual.memberbenecard {background-image:url('../Images/contents/visual_bene_card.jpg'); background-size:auto 100%; font-family: 'Noto Sans KR', 'Open Sans', sans-serif;}
+.subTipVisual.memberbenecard .divTable .table_cell strong {display:inline-block; padding:30px 0;border-top:2px solid #fff; border-bottom:1px solid #fff;font-weight: normal;font-size: 24px;line-height: 1.3;}
+.subTipVisual.memberbenecard .divTable .table_cell strong span {display:inline-block; font-size: 42px;font-weight: bold;}
+.subTipVisual.memberbenecard .divTable .table_cell strong em {display:inline-block; font-size:56px; padding-top: 20px;}
+.subTipVisual.memberbenecard .divTable .table_cell .midTxt {margin:25px 0 0; line-height:1.5; font-size:18px; font-weight: normal;}
+.subTipVisual.memberbenecard .divTable .table_cell .txt  {background: none; font-size: 18px;margin: 0;}
+
+
+.subTipVisual.BeneFriends {background-image:url('../Images/contents/visual_bene_friends.jpg'); background-size:auto 100%;  font-family: 'Noto Sans KR', 'Open Sans', sans-serif;}
+.subTipVisual.BeneFriends .divTable .table_cell strong {display:inline-block; padding:30px 0;border-top:2px solid #fff; border-bottom:1px solid #fff;font-weight: normal;font-size: 24px;line-height: 1.3;}
+.subTipVisual.BeneFriends .divTable .table_cell strong span {display:inline-block; font-size: 42px;font-weight: bold;}
+.subTipVisual.BeneFriends .divTable .table_cell strong em {display:inline-block; font-size:56px; padding-top: 20px;}
+.subTipVisual.BeneFriends .divTable .table_cell .midTxt {margin:25px 0 0; line-height:1.5; font-size:18px; font-weight: normal;}
+.subTipVisual.BeneFriends .divTable .table_cell .txt  {background: none; font-size: 18px;margin: 0;padding: 0;}
+
+.subTipVisual.prepayment_card{background-image:url('../Images/contents/visual_prepayment_card.jpg'); background-size:auto 100%;  font-family: 'Noto Sans KR', 'Open Sans', sans-serif;}
+.subTipVisual.prepayment_card .divTable .table_cell strong {display:inline-block; padding:30px 0; line-height: 1; font-size: 0; border-top:2px solid #fff; border-bottom:1px solid #fff;}
+.subTipVisual.prepayment_card .divTable .table_cell strong span {display:inline-block; font-size:20px;}
+.subTipVisual.prepayment_card .divTable .table_cell strong em {display:inline-block; font-size:56px; padding-top: 20px;}
+.subTipVisual.prepayment_card .divTable .table_cell .midTxt {margin:25px 0 0; line-height:1.5; font-size:24px; font-weight: normal;}
+.subTipVisual.prepayment_card .divTable .table_cell .text  {background: none; font-size: 24px; margin-top: 15px;}
+
+
+/*// 190828 수정*/
+	
+.use_wrap > div {border-bottom: 1px solid #e5e5e5}
+.use_wrap > div > div {width: 1200px; margin: 0 auto;text-align: center}
+.use_wrap h3 {padding-bottom:70px;font-size: 22px;font-weight: normal}
+.use_wrap p.txt_lh {line-height: 1 !important;}
+
+.use_wrap .use_app {padding: 100px 0}
+.use_wrap .use_app ul {font-size: 0}
+.use_wrap .use_app ul li {display: inline-block;vertical-align: top;position: relative;width: 25%;box-sizing: border-box;}
+.use_wrap .use_app ul li:first-child p.use_app_grade{background: url(../Images/contents/app_01.png) 0 0 no-repeat; width: 140px; height: 140px;background-size: 100%;margin: 0 auto; text-indent: -9999px;margin-bottom: 27px}
+.use_wrap .use_app ul li:nth-child(2) p.use_app_grade{background: url(../Images/contents/app_02.png) 0 0 no-repeat; width: 140px; height: 140px;background-size: 100%;margin: 0 auto;text-indent: -9999px;margin-bottom: 27px}
+.use_wrap .use_app ul li:nth-child(3) p.use_app_grade{background: url(../Images/contents/app_03.png) 0 0 no-repeat; width: 140px; height: 140px;background-size: 100%;margin: 0 auto;text-indent: -9999px;margin-bottom: 27px}
+.use_wrap .use_app ul li:nth-child(4) p.use_app_grade{background: url(../Images/contents/app_04.png) 0 0 no-repeat; width: 140px; height: 140px;background-size: 100%;margin: 0 auto;text-indent: -9999px;margin-bottom: 27px}
+.use_wrap .use_app ul li:last-child p:after {background: none}
+.use_wrap .use_app ul li p:after {display: inline-block; content: ""; background: url(../Images/contents/icon_next.png); width:25px; height: 47px;position: absolute;top:16%;right: 0}
+.use_wrap .use_app ul li p.use_app_txt {padding-bottom: 16px;font-size: 18px;line-height: 1.5}
+.use_wrap .use_app ul li p em {color:#9d9d9d;font-size: 13px;line-height: 1.3}
+.use_wrap .use_app ul li button {width:111px;height: 44px;line-height: 40px; border:1px solid #ccc;background: url(../Images/contents/button.png) 84px 18px no-repeat;border-radius: 5px;text-align: left;padding-left: 17px;font-size: 15px;}
+.use_wrap .use_app ul li:last-child button {width:212px;height: 44px;line-height: 44px; border:1px solid #ccc;background: url(../Images/contents/button.png) 190px 18px no-repeat;border-radius: 5px;margin-top:20px;padding-left: 14px;}
+
+
+.use_wrap .use_prepay {padding: 100px 0;}
+.use_wrap .use_prepay_inner {text-align: left}
+.use_wrap .use_prepay_inner .use_prepay_title h3 {padding-bottom: 20px;text-align: center}
+.use_wrap .use_prepay_inner .use_prepay_title p {text-align: center;color: #701b00;padding-bottom: 70px;font-size: 15px}
+.use_wrap .use_prepay ul {font-size: 0}
+.use_wrap .use_prepay ul li {display: inline-block;vertical-align: top;position: relative;width: 25%;box-sizing: border-box;text-align: center;}
+.use_wrap .use_prepay ul li:first-child p.use_app_grade{background: url(../Images/contents/card_01.png) 0 0 no-repeat; width: 140px; height: 140px;background-size: 100%;margin: 0 auto; text-indent: -9999px;margin-bottom: 27px}
+.use_wrap .use_prepay ul li:nth-child(2) p.use_app_grade{background: url(../Images/contents/card_02.png) 0 0 no-repeat; width: 140px; height: 140px;background-size: 100%;margin: 0 auto;text-indent: -9999px;margin-bottom: 27px}
+.use_wrap .use_prepay ul li:nth-child(3) p.use_app_grade{background: url(../Images/contents/card_03.png) 0 0 no-repeat; width: 140px; height: 140px;background-size: 100%;margin: 0 auto;text-indent: -9999px;margin-bottom: 27px}
+.use_wrap .use_prepay ul li:nth-child(4) p.use_app_grade{background: url(../Images/contents/card_04.png) 0 0 no-repeat; width: 140px; height: 140px;background-size: 100%;margin: 0 auto;text-indent: -9999px;margin-bottom: 27px}
+.use_wrap .use_prepay ul li:nth-child(5) p.use_app_grade{background: url(../Images/contents/card_05.png) 0 0 no-repeat; width: 140px; height: 140px;background-size: 100%;margin: 0 auto;text-indent: -9999px;margin-bottom: 27px}
+.use_wrap .use_prepay ul li:nth-child(6) p.use_app_grade{background: url(../Images/contents/card_06.png) 0 0 no-repeat; width: 140px; height: 140px;background-size: 100%;margin: 0 auto;text-indent: -9999px;margin-bottom: 27px}
+.use_wrap .use_prepay ul li:nth-child(5) {margin-top: 70px}
+.use_wrap .use_prepay ul li:nth-child(6) {margin-top: 70px}
+.use_wrap .use_prepay ul li:last-child p:after {background: none}
+.use_wrap .use_prepay ul li p:after {display: inline-block; content: ""; background: url(../Images/contents/icon_next.png); width:25px; height: 47px;position: absolute;top:16%;right: 0}
+.use_wrap .use_prepay ul li p.use_app_txt {padding-bottom: 16px;font-size: 18px;line-height: 1.5;text-align: center}
+.use_wrap .use_prepay ul li p em {color:#9d9d9d;font-size: 13px;line-height: 1.3}
+.use_wrap .use_prepay ul li:nth-child(3) button {margin-top: 24px}
+.use_wrap .use_prepay ul li button {width:111px;height: 44px;line-height: 40px; border:1px solid #ccc;background: url(../Images/contents/button.png) 84px 18px no-repeat;border-radius: 5px;text-align: left;padding-left: 17px;font-size: 15px;}
+
+
+.how_use_wrap .how_use_install_inner {width:1200px; margin: 0 auto}
+.how_use_wrap > div.how_use_install {background-color: #f5f5f5;padding: 100px 0}
+.how_use_wrap > div.how_use_install h2 {font-weight: normal;padding-bottom: 110px;font-size: 36px;text-align: center}
+.how_use_wrap > div.how_use_install h3 {text-align: left;border-bottom: 2px solid #e1e0e0;padding-bottom: 20px;font-size: 22px}
+.how_use_wrap > div.how_use_install ul {text-align: center;padding-top: 50px;}
+.how_use_wrap > div.how_use_install ul li {padding-bottom: 40px;}
+.how_use_wrap > div.how_use_install ul li:last-child {padding-bottom: 0}
+.how_use_wrap > div.how_use_install ul li p {display: inline-block;vertical-align: middle;padding-right: 65px;text-align: left;font-size: 18px;line-height: 1.5}
+.how_use_wrap > div.how_use_install ul li a {text-indent: -9999px; background: url(../Images/contents/google.png) 0 0 no-repeat;width:209px; height: 62px;background-size: 100%;display: inline-block;vertical-align: middle;}
+.how_use_wrap > div.how_use_install ul li:nth-child(2) a {text-indent: -9999px; background: url(../Images/contents/apple.png) 0 0 no-repeat;width:209px; height: 62px;background-size: 100%;display: inline-block;vertical-align: middle;}
+
+
+
+.how_use_wrap .how_use_join_inner {width:1200px; margin: 0 auto}
+.how_use_wrap > div.how_use_join {background-color: #ececec;padding: 100px 0}
+.how_use_wrap > div.how_use_join h3 {text-align: left;border-bottom: 2px solid #e1e0e0;padding-bottom: 20px;font-size: 22px}
+.how_use_wrap > div.how_use_join ul {padding-top: 50px;font-size: 0;width: 100%}
+.how_use_wrap > div.how_use_join ul li {display: inline-block;vertical-align: top;position: relative;font-size: 18px;line-height: 1.3;text-align: center;width: 20%;box-sizing: border-box;padding: 0 10px}
+.how_use_wrap > div.how_use_join ul li p {position: relative;word-break: keep-all}
+.how_use_wrap > div.how_use_join ul li:first-child p.use_app_grade{background: url(../Images/contents/member_01.png) 0 0 no-repeat; width: 224px; height: 379px;background-size: 100%;margin: 0 auto; text-indent: -9999px;margin-bottom: 27px}
+.how_use_wrap > div.how_use_join ul li:first-child p.use_app_grade:after {content: "";display: block; background: url(../Images/contents/member_01_point.png) 0 0 no-repeat;width:144px; height: 142px;position: absolute;bottom:7px;right: -11px}
+.how_use_wrap > div.how_use_join ul li:nth-child(2)  p.use_app_grade{background: url(../Images/contents/member_02.png) 0 0 no-repeat; width: 224px; height: 379px;background-size: 100%;margin: 0 auto; text-indent: -9999px;margin-bottom: 27px}
+.how_use_wrap > div.how_use_join ul li:nth-child(2)  p.use_app_grade:after {content: "";display: block; background: url(../Images/contents/member_02_point.png) 0 0 no-repeat;width:146px; height: 142px;position: absolute;bottom:140px;right: -8px}
+.how_use_wrap > div.how_use_join ul li:nth-child(3)  p.use_app_grade{background: url(../Images/contents/member_03.png) 0 0 no-repeat; width: 224px; height: 379px;background-size: 100%;margin: 0 auto; text-indent: -9999px;margin-bottom: 27px}
+.how_use_wrap > div.how_use_join ul li:nth-child(4)  p.use_app_grade{background: url(../Images/contents/member_04.png) 0 0 no-repeat; width: 224px; height: 379px;background-size: 100%;margin: 0 auto; text-indent: -9999px;margin-bottom: 27px}
+.how_use_wrap > div.how_use_join ul li:nth-child(5)  p.use_app_grade{background: url(../Images/contents/member_05.png) 0 0 no-repeat; width: 224px; height: 379px;background-size: 100%;margin: 0 auto; text-indent: -9999px;margin-bottom: 27px}
+.how_use_wrap > div.how_use_join ul li span {display: block;width:58px;height: 28px; line-height:1.4; background-color: #000;color: #fff;border-radius: 20px;font-size: 18px;margin:20px auto 17px;text-align: center}
+
+
+
+.how_use_wrap .how_use_payment_inner {width:1200px; margin: 0 auto}
+.how_use_wrap > div.how_use_payment {background-color: #f5f5f5;padding: 100px 0}
+.how_use_wrap > div.how_use_payment h3 {text-align: left;border-bottom: 2px solid #e1e0e0;padding-bottom: 20px;font-size: 22px}
+.how_use_wrap > div.how_use_payment ul {padding-top: 50px;font-size: 0;width: 100%}
+.how_use_wrap > div.how_use_payment ul li {display: inline-block;vertical-align: top;position: relative;font-size: 18px;line-height: 1.3;text-align: center;width: 25%;box-sizing: border-box;padding: 0 10px}
+.how_use_wrap > div.how_use_payment ul li p {position: relative;word-break: keep-all}
+.how_use_wrap > div.how_use_payment ul li:first-child p.use_app_grade{background: url(../Images/contents/pay_01.png) 0 0 no-repeat; width: 284px; height: 481px;background-size: 100%;margin: 0 auto; text-indent: -9999px;margin-bottom: 27px;}
+.how_use_wrap > div.how_use_payment ul li:first-child p.use_app_grade:after{content: "";display: block; background: url(../Images/contents/pay_01_point.png) 0 0 no-repeat;width:86px; height: 86px;position: absolute;top:-15px;right:-10px;word-break: keep-all;}
+.how_use_wrap > div.how_use_payment ul li:nth-child(2) p.use_app_grade{background: url(../Images/contents/pay_02.png) 0 0 no-repeat; width: 284px; height: 481px;background-size: 100%;margin: 0 auto; text-indent: -9999px;margin-bottom: 27px}
+.how_use_wrap > div.how_use_payment ul li:nth-child(3) p.use_app_grade{background: url(../Images/contents/pay_03.png) 0 0 no-repeat; width: 284px; height: 481px;background-size: 100%;margin: 0 auto; text-indent: -9999px;margin-bottom: 27px}
+.how_use_wrap > div.how_use_payment ul li:nth-child(4) p.use_app_grade{background: url(../Images/contents/pay_04.png) 0 0 no-repeat;width: 284px; height: 481px;background-size: 100%;margin: 0 auto; text-indent: -9999px;margin-bottom: 27px}
+.how_use_wrap > div.how_use_payment ul li:nth-child(5) p.use_app_grade{background: url(../Images/contents/pay_05.png) 0 0 no-repeat; width: 284px; height: 481px;background-size: 100%;margin: 0 auto; text-indent: -9999px;margin-bottom: 27px}
+.how_use_wrap > div.how_use_payment ul li:nth-child(6) p.use_app_grade{background: url(../Images/contents/pay_06.png) 0 0 no-repeat; width: 284px; height: 481px;background-size: 100%;margin: 0 auto; text-indent: -9999px;margin-bottom: 27px}
+.how_use_wrap > div.how_use_payment ul li span {display: block;width:58px;height: 28px; line-height:1.4; background-color: #000;color: #fff;border-radius: 20px;font-size: 18px;margin:20px auto 17px;text-align: center}
+.how_use_wrap > div.how_use_payment ul li:nth-child(5) {margin-top: 90px}
+.how_use_wrap > div.how_use_payment ul li:nth-child(6) {margin-top: 90px}
+
+
+
+.how_use_wrap .how_use_prepay_inner {width:1200px; margin: 0 auto}
+.how_use_wrap .how_use_prepay{background-color: #ececec;padding:100px 0 160px}
+.how_use_wrap > div.how_use_prepay h3 {text-align: left;border-bottom: 2px solid #e1e0e0;padding-bottom: 20px;font-size: 22px}
+.how_use_wrap > div.how_use_prepay ul {padding-top: 50px;text-align: center; font-size: 0;}
+.how_use_wrap > div.how_use_prepay ul li {display: inline-block;vertical-align: top;position: relative;width: 25%;box-sizing: border-box;padding: 0 10px;font-size: 18px;}
+.how_use_wrap > div.how_use_prepay ul li p {position: relative;word-break: keep-all;line-height: 1.3}
+.how_use_wrap > div.how_use_prepay ul li:first-child p.use_app_grade{background: url(../Images/contents/pay_01.png) 0 0 no-repeat; width: 284px; height: 481px;background-size: 100%;margin: 0 auto; text-indent: -9999px;margin-bottom: 27px;} 
+.how_use_wrap > div.how_use_prepay ul li:first-child p.use_app_grade:after{content: "";display: block; background: url(../Images/contents/pay_01_point.png) 0 0 no-repeat;width:86px; height: 86px;position: absolute;top:-15px;right:-10px;word-break: keep-all;}
+.how_use_wrap > div.how_use_prepay ul li:nth-child(2) p.use_app_grade{background: url(../Images/contents/pay_02.png) 0 0 no-repeat; width: 284px; height: 481px;background-size: 100%;margin: 0 auto; text-indent: -9999px;margin-bottom: 27px;} 
+.how_use_wrap > div.how_use_prepay ul li:nth-child(3) p.use_app_grade{background: url(../Images/contents/prepay_03.png) 0 0 no-repeat; width: 284px; height: 481px;background-size: 100%;margin: 0 auto; text-indent: -9999px;margin-bottom: 27px;} 
+.how_use_wrap > div.how_use_prepay ul li:nth-child(4) p.use_app_grade{background: url(../Images/contents/prepay_04.png) 0 0 no-repeat; width: 284px; height: 481px;background-size: 100%;margin: 0 auto; text-indent: -9999px;margin-bottom: 27px;} 
+.how_use_wrap > div.how_use_prepay ul li span {display: block;width:58px;height: 28px; line-height:1.4; background-color: #000;color: #fff;border-radius: 20px;font-size: 18px;margin:20px auto 17px;text-align: center}
+
+.benefirends_top{width: 1280px; padding: 100px 40px; margin: 0 auto; box-sizing: border-box; text-align: center;}
+.benefirends_top > h2{font-size: 22px; color: #222; font-weight: bold; text-align: left;} 
+.benefirends_top .line_title{text-align: center; color:#464646; display: inline-block; padding: 0px 67px; margin: 40px auto; background: url(../Images/contents/line.png) center repeat-x}
+.benefirends_top .line_title > span{background: #FFF; font-size: 18px; display: inline-block; padding: 0 10px;}
+.benefirends_top > ul{width: 100%; text-align: center; padding-top: 60px;}
+.benefirends_top > ul > li{display: inline-block; vertical-align: top;}
+.benefirends_top > ul > li > img{width: 35px;}
+.benefirends_top > ul > li > h3{font-size: 30px; color: #313131; padding-top: 15px;}
+.benefirends_top > ul > li > h3 > strong{font-weight: bold;}
+.benefirends_top > ul > li > p {padding-top: 25px; font-size: 22px; color: #872434; font-weight: bold;}
+.benefirends_top > ul > li > span{display: block; padding-top: 10px; font-size: 18px; color: #464646; }
+.benefirends_top > ul > li > em{display: block; padding-top: 10px; font-size: 13px; color: #8b8b8b; }
+
+.benefirends_top > ul > li:first-child{margin-right: 250px;}
+
+.benefirends_mid{width: 100%; background: #fafafa; padding: 100px 0; box-sizing: border-box; text-align: center;}
+.benefirends_mid .inner{width: 1280px; padding: 0px 40px; margin: 0 auto; box-sizing: border-box;}
+.benefirends_mid .inner > ul{width: 100%; }
+.benefirends_mid .inner > ul > li {width: 100%; display: table; margin-bottom:20px;  background: #f0f0f0;  padding: 4px; }
+.benefirends_mid .inner > ul > li .mug_box {width: 446px; display: table-cell; background: #fff; padding: 50px 0;}
+.benefirends_mid .inner > ul > li .mug_box > span{width: 209px; height: 38px; line-height: 36px; font-size: 22px; color: #fff; margin-top: 20px; background: #872434; display: inline-block; border-radius: 19px;}
+.benefirends_mid .inner > ul > li .mug_box > span > em{font-weight: bold;}
+.benefirends_mid .inner > ul > li .mug_box > p{font-size: 15px; padding-top: 14px; color: #464646; }
+.benefirends_mid .inner > ul > li .mug_box > a{margin-top: 10px; color: #872434; font-size: 13px; display: inline-block	}
+.benefirends_mid .inner > ul > li .wlist_ar {width: auto; display: table-cell; vertical-align: middle; padding: 55px 0 20px;}
+.benefirends_mid .inner > ul > li .wlist_ar .inner_table{width: 100%; display: table ; padding-bottom: 50px;}
+.benefirends_mid .inner > ul > li .wlist_ar .inner_table .tablecellbox{width: 50%; display: table-cell; text-align: left; vertical-align: top; padding-left: 8%}
+.benefirends_mid .inner > ul > li .wlist_ar .inner_table .tablecellbox .inners{display: inline-block;}
+.benefirends_mid .inner > ul > li .wlist_ar .inner_table .tablecellbox .inners .uline{ text-align: left;}
+.benefirends_mid .inner > ul > li .wlist_ar .inner_table .tablecellbox .inners .uline > span {display: inline-block; font-size: 26px; font-style: italic; color: #222; padding-bottom: 7px; border-bottom: 2px solid #cccbcb;}
+.benefirends_mid .inner > ul > li .wlist_ar .inner_table .tablecellbox .inners > p{padding-top: 10px; font-size: 18px; color: #222; text-align: left; line-height: 1.5;}
+.benefirends_mid .inner > ul > li .wlist_ar .inner_table .tablecellbox .inners > em{text-align: left; display: block; padding-top: 8px; color: #a12a3a;}
+
+
+.benefirends_mid .inner > ul > li .wlist_ar .inner_top {  padding-left: 8%; padding-bottom: 50px;}
+.benefirends_mid .inner > ul > li .wlist_ar .inner_top .tablecellbox{width: 100%; display: table-cell; text-align: left; vertical-align: top;}
+.benefirends_mid .inner > ul > li .wlist_ar .inner_top .tablecellbox .inners{display: inline-block;}
+.benefirends_mid .inner > ul > li .wlist_ar .inner_top .tablecellbox .inners .uline{ text-align: left;}
+.benefirends_mid .inner > ul > li .wlist_ar .inner_top .tablecellbox .inners .uline > span {display: inline-block; font-size: 26px; font-style: italic; color: #222; padding-bottom: 7px; border-bottom: 2px solid #cccbcb;}
+.benefirends_mid .inner > ul > li .wlist_ar .inner_top .tablecellbox .inners > p{padding-top: 10px; font-size: 18px; color: #222; text-align: left; line-height: 1.5;}
+.benefirends_mid .inner > ul > li .wlist_ar .inner_top .tablecellbox .inners > em{text-align: left; display: block; padding-top: 8px; color: #a12a3a;}
+.benefirends_mid .inner > ul > li .wlist_ar .inner_top .img_box{width: 596px; text-align: left; padding-top:30px; }
+
+
+/*190411*/
+.benefirends_mid .mug_info {display: table;width: 1280px;margin: 0 auto;text-align: center;padding: 0 40px;box-sizing: border-box;margin-bottom:80px}
+.benefirends_mid .mug_info .mug_info_txt{display: table-cell;width:auto;padding: 0 4px 0 90px;vertical-align: middle;}
+.benefirends_mid .mug_info h2 {width: 446px;display: table-cell;vertical-align: middle}
+.benefirends_mid .mug_info ul{display: table-cell;width: auto;text-align: left;line-height: 1.7;}
+.benefirends_mid .mug_info ul li{text-indent: -10px;}
+
+/*190411*/
+
+
+
+
+.benefirends_bt{width: 100%; background: #fff; padding: 100px 0; box-sizing: border-box; text-align: center;}
+.benefirends_bt > h4 {font-size: 18px; padding-bottom: 20px; }
+.benefirends_bt > h3 {font-size: 38px; color: #872434; padding-bottom: 20px; }
+.benefirends_bt > .text_ar{display: block; margin: 40px auto; width: 570px;}
+.benefirends_bt > .text_ar > p{font-size: 15px; line-height: 1.6; text-align: left; padding-left: 10px; text-indent: -10px;}
+.benefirends_bt > .text_ar > h5{font-size: 15px; font-weight: bold; padding-bottom: 10px; text-align: left;}
+.benefirends_bt > .text_ar > h5{font-size: 15px; font-weight: bold; padding-bottom: 10px; text-align: left;}
+
+.prepayment_top{width: 100%; padding: 100px 0; text-align: center;}
+.prepayment_top .card_box{display: inline-block; padding-left: 60px; }
+.prepayment_top .card_box:first-child{padding-left: 0;}
+
+.prepayment_mid{width: 100%; padding: 90px 0; background: #f5f5f5; text-align: center;}
+.prepayment_mid .top_inner{width: 1280px; padding: 0 40px; display: table; box-sizing: border-box; margin: 0 auto;}
+.prepayment_mid .top_inner .inner_info{width: 50%; display: table-cell; text-align: left; padding-right: 100px;}
+.prepayment_mid .top_inner .inner_info .box_img{width: 98px;}
+.prepayment_mid .top_inner .inner_info .box_img > img{width: 100%;}
+.prepayment_mid .top_inner .inner_info > h3{font-size:22px; color: #222; padding-top:30px  }
+.prepayment_mid .top_inner .inner_info > h3 > strong{font-weight: bold; font-size: 28px; line-height: 1.8; }
+.prepayment_mid .top_inner .inner_info .p_box{width: 100%; padding: 20px 0;}
+.prepayment_mid .top_inner .inner_info .p_box > p{font-size: 14px; padding-left: 10px; text-indent: -10px;}
+.prepayment_mid .grey_box{ width: 1280px; margin: 0 auto; margin-top: 70px; padding: 40px; box-sizing: border-box; background: #ececec; text-align: left; }
+.prepayment_mid .grey_box > h5{font-size: 22px; font-weight: bold; padding-bottom: 15px;}
+.prepayment_mid .grey_box > p{font-size: 14px; line-height: 1.8;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px){
+	
+	.use_wrap > div > div {width: 100%; margin: 0 auto;text-align: center}
+	.use_wrap .use_app {padding: 65px 0}
+	.use_wrap h3 {padding-bottom: 45px}
+	.use_wrap .use_app ul li {width:25%}
+	.use_wrap .use_app ul li:first-child p.use_app_grade {width: 90px; height:90px;background-size: 100%;margin-bottom: 15px}
+	.use_wrap .use_app ul li:nth-child(2) p.use_app_grade{width: 90px; height:90px;background-size: 100%;margin-bottom: 15px}
+	.use_wrap .use_app ul li:nth-child(3) p.use_app_grade{width: 90px; height:90px;background-size: 100%;margin-bottom: 15px}
+	.use_wrap .use_app ul li:nth-child(4) p.use_app_grade{width: 90px; height:90px;background-size: 100%;margin-bottom: 15px}
+	.use_wrap .use_app ul li p:after {width:17px; height: 31px; background-size:100%;top:15%}
+	.use_wrap .use_app ul li p.use_app_txt {font-size:13px}
+	.use_wrap .use_app ul li button {width: 72px; height: 30px; font-size:11px;line-height: 2; padding-left: 7px;background-position: 57px center}
+	.use_wrap .use_app ul li:last-child button {width: 150px; height: 30px; font-size:11px;line-height: 2; padding-left: 7px;background-position: 135px center;margin-top: 15px}
+	.use_wrap .use_app ul li p em {line-height: 1.3;font-size: 11px}
+	
+	.use_wrap .use_prepay {padding: 65px 0 70px}
+	.use_wrap .use_prepay_inner {padding: 0 95px;box-sizing: border-box}
+	.use_wrap .use_prepay_inner .use_prepay_title h3 {padding-bottom: 12px}
+	.use_wrap .use_prepay_inner .use_prepay_title p {font-size: 13px;padding-bottom: 45px;}
+	.use_wrap .use_prepay ul li {width:33.333%}
+	.use_wrap .use_prepay ul li:first-child p.use_app_grade{width: 90px; height:90px;background-size: 100%;margin-bottom: 15px}
+	.use_wrap .use_prepay ul li:nth-child(2) p.use_app_grade{width: 90px; height:90px;background-size: 100%;margin-bottom: 15px}
+	.use_wrap .use_prepay ul li:nth-child(3) p.use_app_grade{width: 90px; height:90px;background-size: 100%;margin-bottom: 15px}
+	.use_wrap .use_prepay ul li:nth-child(4) p.use_app_grade{width: 90px; height:90px;background-size: 100%;margin-bottom: 15px}
+	.use_wrap .use_prepay ul li:nth-child(5) p.use_app_grade{width: 90px; height:90px;background-size: 100%;margin-bottom: 15px}
+	.use_wrap .use_prepay ul li:nth-child(6) p.use_app_grade{width: 90px; height:90px;background-size: 100%;margin-bottom: 15px}
+	.use_wrap .use_prepay ul li p:after {width:17px; height: 31px; background-size:100%;top:15%}
+	.use_wrap .use_prepay ul li p.use_app_txt {font-size:13px;padding-bottom: 10px}
+	.use_wrap .use_prepay ul li button {width: 72px; height: 30px; font-size:11px;line-height: 2; padding-left: 7px;background-position: 57px center}
+	.use_wrap .use_prepay ul li p em {line-height: 1.3;font-size: 11px}
+	.use_wrap .use_prepay ul li:nth-child(3) button{margin-top: 15px}
+	.use_wrap .use_prepay ul li:nth-child(4) {margin-top: 45px}
+	.use_wrap .use_prepay ul li:nth-child(5) {margin-top: 45px}
+	.use_wrap .use_prepay ul li:nth-child(6) {margin-top: 45px}
+	
+	.how_use_wrap > div.how_use_install {padding: 65px 0}
+	.how_use_wrap .how_use_install_inner {width: 100%;padding: 0 20px;box-sizing: border-box;}
+	.how_use_wrap > div.how_use_install h2 {font-size: 22px;padding-bottom: 70px}
+	.how_use_wrap > div.how_use_install h3 {font-size: 18px}
+	.how_use_wrap > div.how_use_install ul li{padding-bottom: 25px}
+	.how_use_wrap > div.how_use_install ul li p {font-size: 13px;padding-right: 40px}
+	.how_use_wrap > div.how_use_install ul li a {width:135px; height: 40px}
+	.how_use_wrap > div.how_use_install ul li:nth-child(2) a {width:135px; height: 40px}
+	
+	
+	.how_use_wrap .how_use_join_inner {width: 100%; padding: 0 20px;box-sizing: border-box}
+	.how_use_wrap > div.how_use_join {padding: 65px 0}
+	.how_use_wrap > div.how_use_join h3 {font-size: 18px}
+	.how_use_wrap > div.how_use_join ul {padding: 30px 100px 0;box-sizing: border-box}
+	.how_use_wrap > div.how_use_join ul li {width:33.333%}
+	.how_use_wrap > div.how_use_join ul li:first-child p.use_app_grade{width: 144px; height:243px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_join ul li:nth-child(2) p.use_app_grade{width: 144px; height:243px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_join ul li:nth-child(3) p.use_app_grade{width: 144px; height:243px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_join ul li:nth-child(4) p.use_app_grade{width: 144px; height:243px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_join ul li:nth-child(5) p.use_app_grade{width: 144px; height:243px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_join ul li:first-child p.use_app_grade:after {width: 86px;height:86px;background-size: 100%;bottom: 0;right: -10%;}
+	.how_use_wrap > div.how_use_join ul li:nth-child(2) p.use_app_grade:after {width: 86px;height:86px;background-size: 100%;bottom:39%;right: -10%;}
+	.how_use_wrap > div.how_use_join ul li:nth-child(4) {margin-top: 50px}
+	.how_use_wrap > div.how_use_join ul li:nth-child(5) {margin-top: 50px}
+	.how_use_wrap > div.how_use_join ul li p {font-size: 13px}
+	.how_use_wrap > div.how_use_join ul li span {width: 36px; height: 20px; font-size: 13px;margin: 0 auto 10px;}
+	
+
+	
+	.how_use_wrap .how_use_payment_inner {width: 100%; padding: 0 20px;box-sizing: border-box}
+	.how_use_wrap > div.how_use_payment {padding: 65px 0}
+	.how_use_wrap > div.how_use_payment h3 {font-size: 18px}
+	.how_use_wrap > div.how_use_payment ul {padding: 30px 100px 0;box-sizing: border-box}
+	.how_use_wrap > div.how_use_payment ul li {width:33.333%}
+	.how_use_wrap > div.how_use_payment ul li:first-child p.use_app_grade{width: 144px; height:243px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_payment ul li:first-child p.use_app_grade:after {width: 42px;height:42px;background-size: 100%;bottom: 0;right: -4%;}
+	.how_use_wrap > div.how_use_payment ul li:nth-child(2) p.use_app_grade{width: 144px; height:243px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_payment ul li:nth-child(3) p.use_app_grade{width: 144px; height:243px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_payment ul li:nth-child(4) p.use_app_grade{width: 144px; height:243px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_payment ul li:nth-child(5) p.use_app_grade{width: 144px; height:243px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_payment ul li:nth-child(6) p.use_app_grade{width: 144px; height:243px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_payment ul li span {display: block;width:58px;height: 28px; line-height:1.4; background-color: #000;color: #fff;border-radius: 20px;font-size: 18px;margin:20px auto 17px;text-align: center}
+	.how_use_wrap > div.how_use_payment ul li:nth-child(4) {margin-top: 50px}
+	.how_use_wrap > div.how_use_payment ul li:nth-child(5) {margin-top: 50px}
+	.how_use_wrap > div.how_use_payment ul li:nth-child(6) {margin-top: 50px}
+	.how_use_wrap > div.how_use_payment ul li p {font-size: 13px}
+	.how_use_wrap > div.how_use_payment ul li span {width: 36px; height: 20px; font-size: 13px;margin: 0 auto 10px;}
+	
+	
+	.how_use_wrap .how_use_prepay_inner {width: 100%; padding: 0 20px;box-sizing: border-box}
+	.how_use_wrap .how_use_prepay{padding: 65px 0}
+	.how_use_wrap > div.how_use_prepay h3 {font-size: 18px}
+	.how_use_wrap > div.how_use_prepay ul {padding: 80px 37px 0;box-sizing: border-box;text-align: left;}
+	.how_use_wrap > div.how_use_prepay ul li{width:25%}
+	.how_use_wrap > div.how_use_prepay ul li p {font-size: 13px;text-align: center}
+	.how_use_wrap > div.how_use_prepay ul li:first-child p.use_app_grade{width: 144px; height:243px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_prepay ul li:first-child p.use_app_grade:after{width: 42px;height:42px;background-size: 100%;bottom: 0;right: -4%;}
+	.how_use_wrap > div.how_use_prepay ul li:nth-child(2) p.use_app_grade{width: 144px; height:243px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_prepay ul li:nth-child(3) p.use_app_grade{width: 144px; height:243px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_prepay ul li:nth-child(4) p.use_app_grade{width: 144px; height:243px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_prepay ul li span {width: 36px; height: 20px; font-size: 13px;margin: 0 auto 10px;}
+
+	
+	.benefirends_top{width: 100%; padding: 100px 30px; margin: 0 auto; box-sizing: border-box; }
+	.benefirends_mid{width: 100%; background: #fafafa; padding: 100px 0; box-sizing: border-box; text-align: center;}
+	.benefirends_mid .inner{width: 100%; padding: 0px 30px; margin: 0 auto; box-sizing: border-box;}
+	.benefirends_mid .inner > ul > li .mug_box {width: 360px; display: table-cell; background: #fff; padding: 50px 0;}
+	.benefirends_mid .inner > ul > li .wlist_ar .inner_top .img_box{width: 100%; text-align: left; padding-top:30px; padding-right: 3%; }
+	.benefirends_mid .inner > ul > li .wlist_ar .inner_top .img_box > img{width: 100%;}
+	
+/*	190411*/
+	.benefirends_mid .mug_info {width: 100%;margin: 0 auto;text-align: center;padding: 0 30px;box-sizing: border-box;margin-bottom:60px}
+	.benefirends_mid .mug_info .mug_info_txt{display: table-cell;width:auto;padding:0 4px 0 90px;vertical-align: middle;padding-left: 6%}
+	.benefirends_mid .mug_info h2 {width: 360px}
+	.benefirends_mid .mug_info ul{display: table-cell;width: auto;text-align: left;line-height: 1.7;}
+	.benefirends_mid .mug_info ul li{text-indent: -10px;padding-left: 10px;word-break: keep-all}
+/*	190411*/
+	
+	.prepayment_mid{width: 100%; padding: 90px 30px; background: #f5f5f5; text-align: center; box-sizing: border-box;}
+	.prepayment_mid .top_inner{width:100%; padding: 0 40px; display: table; box-sizing: border-box; margin: 0 auto;}
+	.prepayment_mid .top_inner .inner_info{width: 50%; display: table-cell; text-align: left; padding-right:5%;}
+	.prepayment_mid .grey_box{ width: 100%; margin: 0 auto; margin-top: 70px; padding: 40px; box-sizing: border-box; background: #ececec; text-align: left; }
+	
+}
+
+
+
+
+
+
+@media screen and (max-width:720px){
+	
+	.subTipVisual.memberbenecard .divTable .table_cell strong {display:inline-block;padding:15px 0;border-top:2px solid #fff;border-bottom:1px solid #fff;font-size: 14px;}
+	.subTipVisual.memberbenecard .divTable .table_cell strong span {display:inline-block; line-height:14px; font-size:20px;font-weight: bold;padding-top: 15px}
+	.subTipVisual.memberbenecard .divTable .table_cell strong em {display:inline-block; font-size:20px; padding-top: 15px;}
+	.subTipVisual.memberbenecard .divTable .table_cell .midTxt {margin:10px 0 0; line-height:22px; font-size:14px;}
+	.subTipVisual.memberbenecard .divTable .table_cell .txt  {background: none; font-size: 14px; margin-top: 5px; }
+	
+	/*190412 수정*/
+	.subTipVisual.BeneFriends .divTable .table_cell strong {display:inline-block;padding:15px 0;border-top:2px solid #fff;border-bottom:1px solid #fff;font-size: 14px;}
+	.subTipVisual.BeneFriends .divTable .table_cell strong span {display:inline-block; line-height:14px; font-size:20px;font-weight: bold;padding-top: 15px}
+	.subTipVisual.BeneFriends .divTable .table_cell strong em {display:inline-block; font-size:20px; padding-top: 15px;}
+	.subTipVisual.BeneFriends .divTable .table_cell .midTxt {margin:10px 0 0; line-height:22px; font-size:14px;}
+	.subTipVisual.BeneFriends .divTable .table_cell .txt  {background: none; font-size: 14px; margin-top: 5px; }
+	
+	.subTipVisual.prepayment_card .divTable .table_cell strong {display:inline-block;padding:15px 0;border-top:2px solid #fff;border-bottom:1px solid #fff;font-size: 14px;}
+	.subTipVisual.prepayment_card .divTable .table_cell strong span {display:inline-block; line-height:14px; font-size:20px;font-weight: bold;padding-top: 15px}
+	.subTipVisual.prepayment_card .divTable .table_cell strong em {display:inline-block; font-size:20px; padding-top: 15px;}
+	.subTipVisual.prepayment_card .divTable .table_cell .midTxt {margin:10px 0 0; line-height:22px; font-size:14px;}
+	.subTipVisual.prepayment_card .divTable .table_cell .txt  {background: none; font-size: 14px; margin-top: 5px; }
+	
+	/*// 190412 수정*/
+	
+	.use_wrap > div > div {width: 100%; margin: 0 auto;text-align: center;padding: 0 25px;box-sizing: border-box;}
+	.use_wrap h3 {font-size: 15px;padding-bottom: 30px;font-weight: bold;}
+	.use_wrap .use_app {padding: 45px 0}
+	.use_wrap .use_app ul {width:100%}
+	.use_wrap .use_app ul li {width:50%}
+	.use_wrap .use_app ul li:first-child p.use_app_grade {width: 60px;height: 60px;background-size: 100%;}
+	.use_wrap .use_app ul li:nth-child(2) p.use_app_grade {width: 60px;height: 60px;background-size: 100%;}
+	.use_wrap .use_app ul li:nth-child(3) p.use_app_grade {width: 60px;height: 60px;background-size: 100%;}
+	.use_wrap .use_app ul li:nth-child(4) p.use_app_grade {width: 60px;height: 60px;background-size: 100%;}
+	.use_wrap .use_app ul li:nth-child(3) {margin-top: 20px}
+	.use_wrap .use_app ul li:nth-child(4) {margin-top: 20px}
+	.use_wrap .use_app ul li p.use_app_txt {font-size:11px}
+	.use_wrap .use_app ul li button {width:60px;height: 22px;line-height: 20px; border:1px solid #ccc;background-position: 48px center;padding-left: 5px;font-size: 9px;}
+	.use_wrap .use_app ul li p em {font-size:11px;line-height: 1.3}
+	
+	.use_wrap .use_prepay_inner {padding: 0 25px}
+	.use_wrap .use_prepay_inner .use_prepay_title p {font-weight: bold}
+	.use_wrap .use_prepay ul {width:100%;}
+	.use_wrap .use_prepay ul li{width:50%;}
+	.use_wrap .use_prepay ul li:first-child p.use_app_grade {width: 60px;height: 60px;background-size: 100%;}
+	.use_wrap .use_prepay ul li:nth-child(2) p.use_app_grade {width: 60px;height: 60px;background-size: 100%;}
+	.use_wrap .use_prepay ul li:nth-child(3) p.use_app_grade {width: 60px;height: 60px;background-size: 100%;}
+	.use_wrap .use_prepay ul li:nth-child(4) p.use_app_grade {width: 60px;height: 60px;background-size: 100%;}
+	.use_wrap .use_prepay ul li:nth-child(5) p.use_app_grade {width: 60px;height: 60px;background-size: 100%;}
+	.use_wrap .use_prepay ul li:nth-child(6) p.use_app_grade {width: 60px;height: 60px;background-size: 100%;}
+	.use_wrap .use_prepay ul li:nth-child(3) {margin-top:25px}
+	.use_wrap .use_prepay ul li:nth-child(4) {margin-top:25px}
+	.use_wrap .use_prepay ul li:nth-child(5) {margin-top:25px}
+	.use_wrap .use_prepay ul li:nth-child(6) {margin-top:25px}
+	
+	.how_use_wrap > div.how_use_install {padding:45px 0 }
+	.how_use_wrap > div.how_use_install h2 {font-size:15px;padding-bottom: 45px;font-weight: bold}
+	.how_use_wrap > div.how_use_install h3 {font-size: 13px;padding-bottom: 10px;}
+	.how_use_wrap .how_use_install_inner {padding: 0 10px}
+	.how_use_wrap > div.how_use_install ul {text-align: center;padding: 20px 18px 0}
+	.how_use_wrap > div.how_use_install ul li p {padding-right: 20px;font-size:10px}
+	.how_use_wrap > div.how_use_install ul li a {width:94px; height: 29px}
+	.how_use_wrap > div.how_use_install ul li:nth-child(2) a {width:94px; height: 29px}
+	
+	.how_use_wrap > div.how_use_join {padding: 45px 0}
+	.how_use_wrap .how_use_join_inner {width: 100%; padding: 0 10px;box-sizing: border-box}
+	.how_use_wrap > div.how_use_join h3 {font-size: 13px;padding-bottom: 10px;}
+	.how_use_wrap > div.how_use_join ul {padding: 30px 17px 0;box-sizing: border-box}
+	.how_use_wrap > div.how_use_join ul li {width:33.333%}
+	.how_use_wrap > div.how_use_join ul li:first-child p.use_app_grade{width: 83px; height:145px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_join ul li:nth-child(2) p.use_app_grade{width: 83px; height:145px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_join ul li:nth-child(3) p.use_app_grade{width: 83px; height:145px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_join ul li:nth-child(4) p.use_app_grade{width: 83px; height:145px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_join ul li:nth-child(5) p.use_app_grade{width: 83px; height:145px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_join ul li:first-child p.use_app_grade:after {width: 50px;height:50px;background-size: 100%;bottom: 5%;right: -5%;}
+	.how_use_wrap > div.how_use_join ul li:nth-child(2) p.use_app_grade:after {width: 50px;height:50px;background-size: 100%;bottom:39%;right: -5%;}
+	.how_use_wrap > div.how_use_join ul li p {font-size: 11px}
+	.how_use_wrap > div.how_use_join ul li:nth-child(4) {margin-top: 30px;}
+	.how_use_wrap > div.how_use_join ul li:nth-child(5) {margin-top: 30px;}
+	
+	
+	.how_use_wrap .how_use_payment {padding: 45px 0}
+	.how_use_wrap > div.how_use_payment h3 {font-size: 13px ;padding-bottom: 10px}
+	.how_use_wrap > div.how_use_payment ul {padding: 30px 17px 0;box-sizing: border-box}
+	.how_use_wrap > div.how_use_payment ul li:first-child p.use_app_grade{width: 83px; height:145px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_payment ul li:first-child p.use_app_grade:after {width: 42px;height:42px;background-size: 100%;bottom: 0;right: -4%;}
+	.how_use_wrap > div.how_use_payment ul li:nth-child(2) p.use_app_grade{width: 83px; height:145px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_payment ul li:nth-child(3) p.use_app_grade{width: 83px; height:145px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_payment ul li:nth-child(4) p.use_app_grade{width: 83px; height:145px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_payment ul li:nth-child(5) p.use_app_grade{width: 83px; height:145px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_payment ul li:nth-child(6) p.use_app_grade{width: 83px; height:145px;background-size: 100%;margin-bottom: 12px;}
+	.how_use_wrap > div.how_use_payment ul li:nth-child(4) {margin-top:30px }
+	.how_use_wrap > div.how_use_payment ul li:nth-child(5) {margin-top:30px }
+	.how_use_wrap > div.how_use_payment ul li:nth-child(6) {margin-top:30px }
+	.how_use_wrap > div.how_use_payment ul li p {font-size: 11px}
+	
+
+	.how_use_wrap .how_use_prepay{padding: 45px 0 60px}
+	.how_use_wrap > div.how_use_prepay h3 {font-size: 13px ;padding-bottom: 10px}
+	.how_use_wrap > div.how_use_prepay ul {padding: 30px 17px 0;box-sizing: border-box}
+	.how_use_wrap > div.how_use_prepay ul li{width:50%}
+	.how_use_wrap > div.how_use_prepay ul li p {font-size: 11px}
+	.how_use_wrap > div.how_use_prepay ul li:first-child p.use_app_grade{background-size: 100%;margin-bottom: 12px;width: 109px;height: 185px;}
+	.how_use_wrap > div.how_use_prepay ul li:first-child p.use_app_grade:after{width: 42px;height:42px;background-size: 100%;bottom: 0;right: -4%;}
+	.how_use_wrap > div.how_use_prepay ul li:nth-child(2) p.use_app_grade{background-size: 100%;margin-bottom: 12px;width: 109px;height: 185px;}
+	.how_use_wrap > div.how_use_prepay ul li:nth-child(3) p.use_app_grade{background-size: 100%;margin-bottom: 12px;width: 109px;height: 185px;}
+	.how_use_wrap > div.how_use_prepay ul li:nth-child(4) p.use_app_grade{background-size: 100%;margin-bottom: 12px;width: 109px;height: 185px;}
+	.how_use_wrap > div.how_use_prepay ul li:nth-child(3) {margin-top:30px }
+	.how_use_wrap > div.how_use_prepay ul li:nth-child(4) {margin-top:30px }
+	.how_use_wrap > div.how_use_prepay ul li span {width: 36px; height: 20px; font-size: 13px;margin: 0 auto 10px;}
+
+	
+
+	
+	.benefirends_top > h2{font-size: 18px; color: #222; font-weight: bold; text-align: left;} 
+	.benefirends_top .line_title{text-align: center; color:#464646; display: inline-block; padding: 0px 40px; margin: 25px auto; background: url(../Images/contents/line.png) center repeat-x}
+	.benefirends_top .line_title > span{background: #FFF; font-size: 15px; display: inline-block; padding: 0 10px;}
+	.benefirends_top{width: 100%; padding: 50px 15px; margin: 0 auto; box-sizing: border-box; }
+	.benefirends_top > ul{width: 100%; display: table; text-align: center; padding-top: 10px; }
+	.benefirends_top > ul > li{display: table-cell; width: 50%; vertical-align: top; padding: 0;}
+	.benefirends_top > ul > li:first-child{margin-right: 5%;}
+	.benefirends_top > ul > li > img{width: 25px;}
+	.benefirends_top > ul > li > h3{font-size: 15px; color: #313131; padding-top: 9px;}
+	.benefirends_top > ul > li > p {padding-top: 15px; font-size: 16px; color: #872434}
+	.benefirends_top > ul > li > span{display: block; padding-top: 5px; font-size: 14px; color: #464646; }
+	.benefirends_top > ul > li > em{display: block; padding-top: 5px; font-size: 12px; color: #8b8b8b; }
+	
+	.benefirends_mid{width: 100%; background: #fafafa; padding: 50px 0; box-sizing: border-box; text-align: center;}
+	.benefirends_mid .inner{width: 100%; padding: 0px 15px; margin: 0 auto; box-sizing: border-box;}
+	
+	
+	.benefirends_mid .inner > ul > li {width: 100%; display: block;  background: #f0f0f0;  padding: 4px;}
+	.benefirends_mid .inner > ul > li .mug_box {width: 100%; display: block; background: #fff; padding: 30px 0;}
+	.benefirends_mid .inner > ul > li .mug_box .img_mug{width: 25%; margin: 0 auto;}
+	.benefirends_mid .inner > ul > li .mug_box .img_mug > img{width: 100%;}
+	.benefirends_mid .inner > ul > li .mug_box > span{width: 160px; height: 25px; line-height: 23px; font-size: 16px; color: #fff; margin-top: 20px; background: #872434; display: inline-block; border-radius: 19px;}
+	.benefirends_mid .inner > ul > li .mug_box > span > em{font-weight: bold;}
+	.benefirends_mid .inner > ul > li .mug_box > p{font-size: 15px; padding-top: 13px; color: #464646; }
+	.benefirends_mid .inner > ul > li .mug_box > a{margin-top: 8px; color: #872434; font-size: 12px; display: inline-block	}
+	.benefirends_mid .inner > ul > li .wlist_ar {width: auto; display: block; vertical-align: middle; padding: 30px 0 10px; }
+	.benefirends_mid .inner > ul > li .wlist_ar .inner_table{width: 100%; display: table; padding-bottom: 30px;}
+	.benefirends_mid .inner > ul > li .wlist_ar .inner_table .tablecellbox{width: 50%; display: table-cell; text-align: left; padding-left: 3%; padding-right: 3%}
+	.benefirends_mid .inner > ul > li .wlist_ar .inner_table .tablecellbox .inners{display: inline-block;}
+	.benefirends_mid .inner > ul > li .wlist_ar .inner_table .tablecellbox .inners .uline{ text-align: left;}
+	.benefirends_mid .inner > ul > li .wlist_ar .inner_table .tablecellbox .inners .uline > span {display: inline-block; font-size: 20px; font-style: italic; color: #222; padding-bottom: 7px; border-bottom: 2px solid #cccbcb;}
+	.benefirends_mid .inner > ul > li .wlist_ar .inner_table .tablecellbox .inners > p{padding-top: 10px; font-size: 12px; color: #222; text-align: left;}
+	.benefirends_mid .inner > ul > li .wlist_ar .inner_table .tablecellbox .inners > em{text-align: left; display: block; padding-top: 8px; color: #a12a3a; font-size: 11px;}
+	
+	.benefirends_mid .inner > ul > li .wlist_ar .inner_top {  padding-left: 3%; padding-bottom: 30px; }
+	.benefirends_mid .inner > ul > li .wlist_ar .inner_top .tablecellbox{width: 100%; display: table-cell; text-align: left; vertical-align: top;}
+	.benefirends_mid .inner > ul > li .wlist_ar .inner_top .tablecellbox .inners{display: inline-block;}
+	.benefirends_mid .inner > ul > li .wlist_ar .inner_top .tablecellbox .inners .uline{ text-align: left;}
+	.benefirends_mid .inner > ul > li .wlist_ar .inner_top .tablecellbox .inners .uline > span {display: inline-block; font-size: 20px; font-style: italic; color: #222; padding-bottom: 7px; border-bottom: 2px solid #cccbcb;}
+	.benefirends_mid .inner > ul > li .wlist_ar .inner_top .tablecellbox .inners > p{padding-top: 10px; font-size: 12px; color: #222; text-align: left; line-height: 1.5;}
+	.benefirends_mid .inner > ul > li .wlist_ar .inner_top .tablecellbox .inners > em{text-align: left; display: block; padding-top: 8px; color: #a12a3a; font-size: 11px;}
+	.benefirends_mid .inner > ul > li .wlist_ar .inner_top .img_box{width: 100%; text-align: left; padding-top:20px; padding-right: 3%; box-sizing: border-box; }
+	.benefirends_mid .inner > ul > li .wlist_ar .inner_top .img_box > img{width: 100%;}
+	
+	/*	190411*/
+	.benefirends_mid .mug_info h2 {width: 100%; display: block;padding-bottom: 60px}
+	.benefirends_mid .mug_info .mug_info_txt {display: block;padding-left: 0}
+	
+/*	190411*/
+	
+	
+	
+	.benefirends_bt{width: 100%; background: #fff; padding: 50px 0; box-sizing: border-box; text-align: center;}
+	.benefirends_bt > h4 {font-size: 12px; padding-bottom: 10px; }
+	.benefirends_bt > h3 {font-size: 26px; color: #872434; padding-bottom: 10px; }
+	.benefirends_bt > .text_ar{display: block; margin: 30px auto; width: 100%; padding: 0 15px; box-sizing: border-box; }
+	.benefirends_bt > .text_ar > p{font-size: 12px; line-height: 1.6; text-align: left; padding-left: 9px; text-indent: -9px;}
+	.benefirends_bt > .text_ar > h5{font-size: 12px; font-weight: bold; padding-bottom: 10px; text-align: left;}
+	
+	
+	.prepayment_top{width: 100%; padding: 50px 0; text-align: center;}
+	.prepayment_top .card_box{display: block; padding-left: 0; width: 60%; margin: 0 auto 20px;}
+	.prepayment_top .card_box > img{width: 100%;}
+	.prepayment_top .card_box:first-child{padding-left: 0;}
+	
+	
+	.prepayment_mid{width: 100%; padding: 30px 0; background: #f5f5f5; text-align: center;}
+	.prepayment_mid .top_inner{width:100%; padding: 0 15px; display: block; box-sizing: border-box; margin: 0 auto;}
+	.prepayment_mid .top_inner .inner_info{width: 100%; display: block; text-align: left; padding: 0% 15px 30px; padding-bottom: 30px; box-sizing: border-box;}
+	.prepayment_mid .top_inner .inner_info .box_img{width: 20%;}
+	.prepayment_mid .top_inner .inner_info .box_img > img{width: 100%;}
+	.prepayment_mid .top_inner .inner_info > h3{font-size:14px; color: #222; padding-top:20px  }
+	.prepayment_mid .top_inner .inner_info > h3 > strong{font-weight: bold; font-size: 20px; line-height: 1.8; }
+	.prepayment_mid .top_inner .inner_info .p_box{width: 100%; padding: 10px 0;}
+	.prepayment_mid .top_inner .inner_info .p_box > p{font-size: 12px; padding-left: 9px; text-indent: -9px; padding-top: 5px;}
+	.prepayment_mid .grey_box{ width: 100%; margin: 0 auto; margin-top: 40px; padding: 30px; box-sizing: border-box; background: #ececec; text-align: left;  }
+	.prepayment_mid .grey_box > h5{font-size: 15px; font-weight: bold; padding-bottom: 15px;}
+	.prepayment_mid .grey_box > p{font-size: 12px; line-height: 1.8;}
+	
+	
+}
